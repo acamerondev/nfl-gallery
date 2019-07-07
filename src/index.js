@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import Home from './components/home/Home';
 import DetailPage from './components/detail/DetailPage';
 import * as serviceWorker from './serviceWorker';
 
@@ -14,7 +14,7 @@ const routing = (
   <Router>
     <div>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Home} />
         <Route path="/:short" component={DetailPage}/>
         <Route path="/404" component={NotFound} />
       </Switch>

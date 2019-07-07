@@ -22,11 +22,11 @@ class Detail extends Component {
   }
 
   render(){
-    let { name, short, text, qb } = this.props.team
+    let { name, short, text, qb, coach} = this.props.team
     return (
       <div className="detail-container">
         <div className="nav">
-          <Link to="/">Home</Link>/{short}
+          <Link to="/">Home</Link> / {short}
         </div>
         <div className="img-selected">
           <img src={this.state.selectedPicture} alt={this.state.alt}/>
@@ -36,9 +36,9 @@ class Detail extends Component {
           <img src={`/logos/${short}.svg`} alt={`${name} Team Logo`}
               onClick={ () => this.pictureSelected(`/logos/${short}.svg`, `${name} Logo`, `${name} Logo`)}/>
           <img src={`/qb/${short}.jpg`}    alt={`${name} Quarterback`}
-              onClick={ () => this.pictureSelected(`/qb/${short}.jpg`, `${name} Quarterback`, `${qb}`)}/>
+              onClick={ () => this.pictureSelected(`/qb/${short}.jpg`, `${name} Quarterback`, `${qb}, Starting Quarterback`)}/>
           <img src={`/coach/${short}.jpg`} alt={`${name} Head Coach`}
-              onClick={ () => this.pictureSelected(`/coach/${short}.jpg`, `${name} Head Coach`, `${name} Head Coach`)}/>
+              onClick={ () => this.pictureSelected(`/coach/${short}.jpg`, `${name} Head Coach`, `${coach}, Head Coach`)}/>
         </div>
         <div className="detail-text">
           <p>{text}</p>
