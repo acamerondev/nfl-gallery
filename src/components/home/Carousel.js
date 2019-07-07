@@ -29,13 +29,13 @@ class Carousel extends Component {
     return (
       <div className="carousel-container">
         <div className="carousel">
-          <h3 className="prev" onClick={() => this.moveIndex(-3)}>&#10094;</h3>
+          <h3 className="prev" onClick={() => this.moveIndex(-1)}>&#10094;</h3>
 
           <CarouselPicture team={teamData[this.state.index]}/>
           <CarouselPicture team={teamData[this.state.secondIndex]}/>
           <CarouselPicture team={teamData[this.state.thirdIndex]}/>
 
-          <h3 className="next" onClick={() => this.moveIndex(3)}>&#10095;</h3>
+          <h3 className="next" onClick={() => this.moveIndex(1)}>&#10095;</h3>
         </div>
       </div>
     )
