@@ -1,0 +1,27 @@
+.carousel-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.carousel-picture img {
+  margin-bottom: 0;
+  height: 15em;
+  margin: 3em;
+}
+
+.picture-title{
+  text-transform: uppercase;
+  color: #676767;
+}
+
+.picture-text {
+  max-height: 25vh;
+  height: 25vh;
+  overflow-y: auto;
+  padding : 0 .5em;
+  color: #676767;
+  margin-bottom: 2em;
+}

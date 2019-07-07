@@ -1,0 +1,11 @@
+.header {
+  background-color: #013334;
+  width: 100%;
+  color: white;
+  height : 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

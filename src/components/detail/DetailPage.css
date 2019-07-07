@@ -1,0 +1,32 @@
+h1 {
+  text-transform: uppercase;
+}
+
+.detail-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.detail-header {
+  background-color: #013334;
+  width: 100%;
+  color: white;
+  height : 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.detail-footer{
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+.detail-footer p {
+  margin-left: 33vw;
+}
