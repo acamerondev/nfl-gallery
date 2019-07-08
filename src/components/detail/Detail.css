@@ -14,12 +14,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
   background-color: rgba(0,0,0,.25)
 }
 
 .img-selected img {
-  max-height : 30vh;
-  min-height: 30vh;
+  max-height : 20em;
+  min-height: 20em;
 }
 
 .caption {
@@ -36,19 +37,37 @@
 
 .img-previews img {
   border: 1px solid black;
-  height: 10vh;
+  height: 5em;
   margin: 1em;
   cursor: pointer;
 }
 
 .detail-text {
-  max-height: 25vh;
-  height: 25vh;
+  max-height: 15em;
+  height: 10em;
   overflow-y: auto;
+  padding : .5vh 1vw;
+  color: #676767;
+  margin-bottom: 2em;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.detail-text p {
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 550px) {
+  .detail-container {
+    width: 95%;
+    margin: 0 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-text {
+    padding: 0 1em;
+  }
+}
+@media only screen and (min-width: 550px) {
   .detail-container {
     width: 80%;
     margin: 0 10%;
@@ -61,11 +80,10 @@
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .detail-container {
-    width: 70%;
-    margin: 0 15%;
+    width: 80%;
+    margin: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,35 +93,32 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .detail-container {
-    width: 50%;
-    margin: 0 25%;
+    width: 60%;
+    margin: 0 20%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 918px) {
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width : 60%;
+    margin: 0 20%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .detail-container {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     width : 50%;
     margin: 0 25%;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .detail-container {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    width : 33%;
-    margin: 0 33%;
   }
 }

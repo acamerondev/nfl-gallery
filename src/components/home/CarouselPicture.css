@@ -9,7 +9,7 @@
 .carousel-picture img {
   margin-bottom: 0;
   height: 15em;
-  margin: 3em;
+  margin: 3vw;
 }
 
 .picture-title{
@@ -18,10 +18,56 @@
 }
 
 .picture-text {
-  max-height: 25vh;
-  height: 25vh;
+  max-height: 15em;
+  height: 10em;
   overflow-y: auto;
-  padding : 0 .5em;
+  padding : .5vh 1vw;
   color: #676767;
   margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .picture3, .picture2 {
+    display: none !important;
+  }
+  .carousel-picture {
+    width: 66%;
+  }
+  .carousel-picture img {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .picture3, .picture2 {
+    display: none !important;
+  }
+  .carousel-picture {
+    width: 66%;
+  }
+  .carousel-picture img {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .picture3 {
+    display: none !important;
+  }
+  .picture2 {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1062px) {
+  .picture2, .picture3 {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .picture2, .picture3 {
+    display: flex !important;
+  }
 }

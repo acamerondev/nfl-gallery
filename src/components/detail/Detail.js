@@ -22,7 +22,7 @@ class Detail extends Component {
   }
 
   render(){
-    let { name, short, text, qb, coach} = this.props.team
+    let { name, short, text, qb, coach, stadium} = this.props.team
     return (
       <div className="detail-container">
         <div className="nav">
@@ -39,6 +39,8 @@ class Detail extends Component {
               onClick={ () => this.pictureSelected(`/qb/${short}.jpg`, `${name} Quarterback`, `${qb}, Starting Quarterback`)}/>
           <img src={`/coach/${short}.jpg`} alt={`${name} Head Coach`}
               onClick={ () => this.pictureSelected(`/coach/${short}.jpg`, `${name} Head Coach`, `${coach}, Head Coach`)}/>
+          <img src={`/stadium/${short}.jpg`} alt={`${name} Stadium`}
+              onClick={ () => this.pictureSelected(`/stadium/${short}.jpg`, `${name} Stadium`, `${stadium}, Home of the ${name}`)}/>
         </div>
         <div className="detail-text">
           <p>{text}</p>

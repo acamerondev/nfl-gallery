@@ -5,7 +5,7 @@ class DetailHeader extends Component {
   render(){
     let {name, color} = this.props.team
     let headerStyle = {
-        'background-color': color,
+        'backgroundColor': color,
     }
     return(
       <div className="detail-header" style={headerStyle}>
