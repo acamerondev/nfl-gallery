@@ -6,7 +6,7 @@ class CarouselPicture extends Component {
   render () {
     let {short, name, text} = this.props.team
     return (
-      <div className="carousel-picture">
+      <div className={`carousel-picture ${this.props.className}`}>
         <Link to ={`/${short}`}>
           <img src={`/logos/${short}.svg`} alt="Team Logo"/>
         </Link>

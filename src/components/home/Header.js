@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header className="header">
         <h1>NFL TEAMS</h1>
-        <p>A carousel of NFL teams</p>
+        <p>A gallery of NFL teams</p>
       </header>
     )
   }

@@ -26,7 +26,7 @@ class Detail extends Component {
     return (
       <div className="detail-container">
         <div className="nav">
-          <Link to="/">Home</Link> / {short}
+          <Link to="/">Home</Link> / {name}
         </div>
         <div className="img-selected">
           <img src={this.state.selectedPicture} alt={this.state.alt}/>

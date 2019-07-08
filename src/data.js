@@ -159,7 +159,7 @@ const teamData = [
     'short' : 'LA',
     'qb': 'Jared Goff',
     'coach': 'Sean McVay',
-    'color' : "#95774C",
+    'color' : "#002147",
     'text' : "The Los Angeles Rams are a professional American football team based in Los Angeles, California. The Rams compete in the National Football League as a member club of the National Football Conference (NFC) West division. The club won three NFL championships, and is the only one to win championships representing three different cities (Cleveland in 1945, Los Angeles in 1951, and St. Louis in 1999). The Rams play their home games at the Los Angeles Memorial Coliseum."
   },
   {

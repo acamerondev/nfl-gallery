@@ -31,9 +31,9 @@ class Carousel extends Component {
         <div className="carousel">
           <h3 className="prev" onClick={() => this.moveIndex(-1)}>&#10094;</h3>
 
-          <CarouselPicture team={teamData[this.state.index]}/>
-          <CarouselPicture team={teamData[this.state.secondIndex]}/>
-          <CarouselPicture team={teamData[this.state.thirdIndex]}/>
+          <CarouselPicture className="picture1" team={teamData[this.state.index]} />
+          <CarouselPicture className="picture2" team={teamData[this.state.secondIndex]} />
+          <CarouselPicture className="picture3" team={teamData[this.state.thirdIndex]}/>
 
           <h3 className="next" onClick={() => this.moveIndex(1)}>&#10095;</h3>
         </div>
